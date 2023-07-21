@@ -31,13 +31,13 @@ final class OpenAI extends OpenAIClientBase {
   /// The singleton instance of [OpenAI], make sure to call the [OpenAI.initialize] method before accessing [instance], otherwise it will throw an [Exception].
   /// A [MissingApiKeyException] will be thrown, if the API key is not set.
   static OpenAI get instance {
-    if (_internalApiKey == null) {
-      throw MissingApiKeyException("""
-      You must set the api key before accessing the instance of this class.
-      Example:
-      OpenAI.apiKey = "Your API Key";
-      """);
-    }
+    // if (_internalApiKey == null) {
+    //   throw MissingApiKeyException("""
+    //   You must set the api key before accessing the instance of this class.
+    //   Example:
+    //   OpenAI.apiKey = "Your API Key";
+    //   """);
+    // }
 
     return _instance;
   }
